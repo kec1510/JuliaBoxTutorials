@@ -6,7 +6,7 @@ else
     end
 end
 using Images,JLD,Knet # ,WordTokenizers
-global atype = gpu()<0 ? Array{Float32}:KnetArray{Float32}
+global atype = gpu()<0 ? Array{Float32}: KnetArray{Float32}
 
 server="people.csail.mit.edu/deniz/"
 if !isdir("data/demo")
